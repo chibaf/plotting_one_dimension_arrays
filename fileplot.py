@@ -15,7 +15,7 @@ for i in range(1,nd+1):
 fig,ax = plt.subplots(facecolor="w")
 x=range(0,len(listd[0]))
 for i in range(0,nd):
-  s=str(i+1)
+  s=str(sys.argv[i+1])
   plt.plot(x,listd[i],label=s)
 ax.legend()
 plt.show()
