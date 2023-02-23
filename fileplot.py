@@ -17,4 +17,4 @@ for i in range(1,nd+1):
 x=range(0,len(listd[0]))
 for i in range(0,nd):
   plt.plot(x,listd[i])
-plt.pause(1)
+plt.show()
