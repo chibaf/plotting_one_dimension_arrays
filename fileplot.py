@@ -1,9 +1,12 @@
 # files plot
+# reading one dimensional files and plotting them
+# every file has a same length
 
 import numpy as np
 import sys
 from matplotlib import pyplot as plt
 
+# reading files
 nd=len(sys.argv)-1
 listd=[]
 for i in range(1,nd+1):
@@ -12,6 +15,7 @@ for i in range(1,nd+1):
   listd.append(data)
   f.close
 
+# plotting files in a same frame
 fig,ax = plt.subplots(facecolor="w")
 x=range(0,len(listd[0]))
 for i in range(0,nd):
